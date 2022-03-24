@@ -1,0 +1,5 @@
+mutation addCycleChunkGoalEntry($input: AddChunkGoalEntryInput!) {
+  addCycleChunkGoalEntry(addChunkGoalEntryInput: $input) {
+    id
+  }
+}

@@ -1,0 +1,12 @@
+query cycleChunksForCycle($id: String!) {
+  cycleChunksForCycle(id: $id) {
+    id
+    startDate
+    endDate
+    compareWithPrevious
+    averageWeight
+    cycle {
+      ...PlainCycle
+    }
+  }
+}

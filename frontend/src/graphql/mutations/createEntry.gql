@@ -1,0 +1,6 @@
+mutation createEntry($input: CreateEntryInput!) {
+  createEntry(createEntryInput: $input) {
+    id
+    weight
+  }
+}

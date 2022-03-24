@@ -1,0 +1,4 @@
+fragment ChunkDateRange on CycleChunk {
+  startDate
+  endDate
+}

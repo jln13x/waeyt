@@ -1,0 +1,8 @@
+fragment PlainCycle on Cycle {
+  id
+  name
+  startDate
+  endDate
+  active,
+  chunkLength
+}

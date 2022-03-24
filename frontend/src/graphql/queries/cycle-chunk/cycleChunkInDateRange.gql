@@ -1,0 +1,7 @@
+query cycleChunkInDateRange($cycleId: String!, $input: InDateRangeInput!) {
+  cycleChunkInDateRange(cycleId: $cycleId, inDateRangeInput: $input) {
+    id
+    compareWithPrevious
+    ...ChunkDateRange
+  }
+}

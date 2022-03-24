@@ -1,0 +1,5 @@
+mutation toggleActiveCycle($id: String!, $input: ToggleActiveInput!) {
+  toggleActiveCycle(id: $id, toggleActiveInput: $input) {
+    ...PlainCycle
+  }
+}

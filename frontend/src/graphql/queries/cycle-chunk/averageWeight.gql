@@ -1,0 +1,10 @@
+query averageWeightOfChunk($id: String!) {
+  cycleChunk(id: $id) {
+    id
+    averageWeight
+    cycle {
+      id
+    }
+    compareWithPrevious
+  }
+}

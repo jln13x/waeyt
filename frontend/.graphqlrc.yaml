@@ -1,0 +1,26 @@
+hooks:
+  afterOneFileWrite:
+    - prettier --write
+schema: http://localhost:3001/graphql
+documents: './src/**/*.gql'
+overwrite: true
+extensions:
+  codegen:
+    generates:
+      ./src/graphql/generated.ts:
+        plugins:
+          - typescript
+          - typescript-operations
+          - typescript-react-query
+          - add:
+              content: 'import { ClientError } from "graphql-request"'
+        config:
+          exposeQueryKeys: true
+          errorType: ClientError
+          fetcher:
+            func: './useFetchClient#useFetchClient'
+            isReactHook: true,
+          strictScalars: true
+          scalars: 
+            Date: string
+            DateTime: string

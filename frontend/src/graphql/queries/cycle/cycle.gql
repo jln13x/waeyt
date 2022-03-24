@@ -1,0 +1,10 @@
+query cycle($id: String!) {
+  cycle(id: $id) {
+    ...PlainCycle
+    cycleChunks {
+      id
+      startDate
+      endDate
+    }
+  }
+}

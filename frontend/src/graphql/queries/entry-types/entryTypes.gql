@@ -1,0 +1,6 @@
+query entryTypes {
+  entryTypes {
+    id
+    type
+  }
+}
